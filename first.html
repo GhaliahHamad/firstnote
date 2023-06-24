@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html dir="ltr">
+    <head>
+  <title> homepage </title>
+  <script>
+  function turnon(){
+  document.getElementById('myimage').src ="lampOn.jpg"; 
+  document.getElementById('mytext'). style.visibility="visible";
+  }
+  function turnoff(){
+  document.getElementById('myimage').src ="lampOff.jpg";
+  document.getElementById('mytext'). style.visibility="hidden";
+  }
+  </script>
+    </head>
+    <body style=" background-color: black;">
+  <h1 style= "color:white; text-align:right; font-size: 56px;"> open the lamp to see the hidden text </h1>
+  <button onclick="turnon()" > open lamp </button>
+  <button onclick="turnoff()" > close lamp </button>
+ <br>
+ <br>
+  <img id="myimage" src="lampOff.jpg" style = width:100px"/>
+  <p id="mytext" style="color:white; font-size:24px; visibility: hidden;"> chase your dream! </p>
+    </body>
+</html>
